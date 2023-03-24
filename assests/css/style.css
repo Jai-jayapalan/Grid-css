@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     background-color: #000000;
     padding: 10px;
     gap: 6px;
@@ -11,4 +11,16 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
+}
+.grid-item ul {
+    overflow: auto;
+}
+.grid-item li {
+    float: left;
+    list-style-type: none;
+    padding: 10px;
+}
+.grid-item ul li a {
+    color: white;
+    text-decoration: none;
 }
