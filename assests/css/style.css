@@ -1,3 +1,7 @@
+body {
+    margin: 50px;
+    padding: 10px;
+}
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -5,22 +9,48 @@
     padding: 10px;
     gap: 6px;
 }
-.grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+.grid-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
-.grid-item ul {
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.grid-item-1 ul {
     overflow: auto;
 }
-.grid-item li {
+.grid-item-1 li {
     float: left;
     list-style-type: none;
     padding: 10px;
+    font-size: 30px;
 }
-.grid-item ul li a {
-    color: white;
+.grid-item-1 ul li a {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+}
+.books {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.kerry {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.icons {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+.item8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item9 {
+    grid-column-start: 3;
+    grid-column-end: 5;
 }
